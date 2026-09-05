@@ -2,204 +2,586 @@
 
 Collection of MonetLoader scripts and learning resources for SA-MP Android.
 
+A collection of simple Lua scripts designed for beginners who want to learn MonetLoader and mimgui.
+
 ---
 
-## 📜 About This Repository
+# 📚 About
 
-This repository contains simple MonetLoader scripts created for beginners who want to learn Lua scripting and mimgui for SA-MP Android.
+This repository contains basic MonetLoader scripts for learning purposes.
 
-The scripts are designed to be simple, readable, and easy to modify.
+The scripts are designed to be:
+
+- 🟢 Beginner friendly
+- 📖 Easy to read
+- 🧩 Easy to modify
+- 💻 Simple to understand
+- 🎮 Compatible with SA-MP Android + MonetLoader
 
 ---
 
 # ⚡ Available Scripts
 
-| Script | Description |
-|---|---|
-| `OnlyLia_Basic_Learning.lua` | Learn basic Lua structure and SA-MP commands |
-| `OnlyLia_Basic_mimgui.lua` | Learn basic mimgui windows and buttons |
-| `OnlyLia_Basic_ClockHUD.lua` | Learn realtime HUD rendering and system time |
-| `OnlyLia_Basic_SettingsUI.lua` | Learn checkboxes, sliders, and settings variables |
-| `OnlyLia_Basic_Notification.lua` | Learn reusable functions and chat notification systems |
+| # | Script | Description |
+|---|---|---|
+| 1 | `OnlyLia_Basic_Learning.lua` | Basic Lua structure and SA-MP commands |
+| 2 | `OnlyLia_Basic_mimgui.lua` | Basic mimgui window and button |
+| 3 | `OnlyLia_Basic_ClockHUD.lua` | Realtime Clock HUD |
+| 4 | `OnlyLia_Basic_SettingsUI.lua` | Checkboxes, sliders and settings |
+| 5 | `OnlyLia_Basic_Notification.lua` | Reusable notification function |
+| 6 | `OnlyLia_Basic_Counter.lua` | Counter and number variables |
+| 7 | `OnlyLia_Basic_TextInput.lua` | Text input and chat messages |
+| 8 | `OnlyLia_Basic_ColorUI.lua` | Color picker and colored text |
+| 9 | `OnlyLia_Basic_TabUI.lua` | Multi-tab interface |
+| 10 | `OnlyLia_Basic_Popup.lua` | Popup and modal windows |
+| 11 | `OnlyLia_Basic_ProgressBar.lua` | Progress bar system |
+| 12 | `OnlyLia_Basic_ComboBox.lua` | Combo box and selection |
+| 13 | `OnlyLia_Basic_ListUI.lua` | Selectable list interface |
+| 14 | `OnlyLia_Basic_ToggleUI.lua` | Multiple feature toggles |
+| 15 | `OnlyLia_Basic_AutoSave.lua` | Save and load settings |
+| 16 | `OnlyLia_Basic_Timer.lua` | Basic realtime timer |
+| 17 | `OnlyLia_Basic_Random.lua` | Random number generator |
+| 18 | `OnlyLia_Basic_Calculator.lua` | Basic calculator |
+| 19 | `OnlyLia_Basic_TodoList.lua` | Simple to-do list |
+| 20 | `OnlyLia_Basic_Notes.lua` | Basic notes editor |
 
 ---
 
-# 📚 Script 1 — Basic Learning
+# 📖 Learning Path
 
-**File:** `OnlyLia_Basic_Learning.lua`
+This repository is arranged as a simple learning path.
 
-A simple script for learning the basic structure of MonetLoader and Lua.
+```text
+01. Basic Lua & Commands
+        ↓
+02. Basic mimgui UI
+        ↓
+03. Clock HUD
+        ↓
+04. Settings UI
+        ↓
+05. Notification Functions
+        ↓
+06. Variables & Counter
+        ↓
+07. Text Input
+        ↓
+08. Colors
+        ↓
+09. Tabs
+        ↓
+10. Popup Windows
+        ↓
+11. Progress Bar
+        ↓
+12. Combo Box
+        ↓
+13. List UI
+        ↓
+14. Toggle Systems
+        ↓
+15. Save & Load Settings
+        ↓
+16. Timer
+        ↓
+17. Random Generator
+        ↓
+18. Calculator
+        ↓
+19. To-Do List
+        ↓
+20. Notes UI
+```
 
-## ✨ Commands
+---
+
+# 📜 Script Details
+
+## 1️⃣ Basic Learning
+
+**File:**
+
+`OnlyLia_Basic_Learning.lua`
+
+A simple script for learning the basic structure of Lua and MonetLoader.
+
+### Commands
 
 ```text
 /liahello
 /liainfo
 ```
 
-## 💻 What You Can Learn
+### Learn
 
 - Lua script structure
 - `require`
-- `main()` function
-- Script loops
+- `main()`
 - `wait(0)`
-- SA-MP availability detection
+- SA-MP availability
 - Chat messages
-- SA-MP commands
-- Basic MonetLoader structure
+- Chat commands
 
 ---
 
-# 🖥️ Script 2 — Basic mimgui UI
+## 2️⃣ Basic mimgui UI
 
-**File:** `OnlyLia_Basic_mimgui.lua`
+**File:**
 
-A simple UI script for learning how to create windows and buttons using mimgui.
+`OnlyLia_Basic_mimgui.lua`
 
-## ✨ Command
+Learn how to create a basic UI window.
+
+### Command
 
 ```text
 /liaui
 ```
 
-## 🖱️ Features
+### Learn
 
-- Open and close a window
-- Display text
-- Create buttons
-- Send chat messages
-- Basic UI interaction
-
-## 💻 What You Can Learn
-
-- `require "mimgui"`
+- `mimgui`
 - `imgui.new.bool()`
 - `imgui.OnDrawFrame()`
-- `imgui.Begin()`
-- `imgui.End()`
-- `imgui.Text()`
-- `imgui.Button()`
-- `imgui.SameLine()`
+- Windows
+- Text
+- Buttons
 
 ---
 
-# 🕒 Script 3 — Basic Clock HUD
+## 3️⃣ Basic Clock HUD
 
-**File:** `OnlyLia_Basic_ClockHUD.lua`
+**File:**
 
-A simple realtime Clock HUD for learning basic HUD rendering.
+`OnlyLia_Basic_ClockHUD.lua`
 
-## ✨ Command
+A realtime clock overlay.
+
+### Command
 
 ```text
 /liahud
 ```
 
-Use the command to enable or disable the Clock HUD.
-
-## 🖥️ HUD Features
-
-- Realtime system clock
-- Hours, minutes, and seconds
-- HUD overlay
-- ON/OFF toggle
-- Transparent background
-
-## 💻 What You Can Learn
+### Learn
 
 - `os.date()`
-- Realtime updates
-- HUD positioning
-- `imgui.SetNextWindowPos()`
-- `imgui.SetNextWindowBgAlpha()`
-- `imgui.WindowFlags`
+- Realtime UI
+- HUD position
+- Window transparency
 - Toggle systems
 
 ---
 
-# ⚙️ Script 4 — Basic Settings UI
+## 4️⃣ Basic Settings UI
 
-**File:** `OnlyLia_Basic_SettingsUI.lua`
+**File:**
 
-A simple settings window for learning interactive UI elements.
+`OnlyLia_Basic_SettingsUI.lua`
 
-## ✨ Command
+A basic interactive settings window.
+
+### Command
 
 ```text
 /liasettings
 ```
 
-## ⚙️ Features
+### Learn
 
 - Checkbox
 - Slider
 - Boolean variables
 - Integer variables
-- Button interaction
-- Close button
-- Basic settings logic
-
-## 💻 What You Can Learn
-
-- `imgui.Checkbox()`
-- `imgui.SliderInt()`
-- `imgui.new.bool()`
-- `imgui.new.int()`
-- UI variables
 - Settings logic
-- Button interaction
 
 ---
 
-# 🔔 Script 5 — Basic Notification System
+## 5️⃣ Basic Notification
 
-**File:** `OnlyLia_Basic_Notification.lua`
+**File:**
 
-A simple notification system for learning how to create reusable functions and display consistent chat messages.
+`OnlyLia_Basic_Notification.lua`
 
-## ✨ Commands
+A reusable chat notification system.
+
+### Commands
 
 ```text
 /lianotify
 /liatest
 ```
 
-### `/lianotify`
+### Learn
 
-Displays a basic notification message.
-
-### `/liatest`
-
-Displays a test notification message.
-
-## 🔔 Features
-
-- Custom notification function
-- Reusable chat messages
-- Message parameters
-- Multiple commands using the same function
-- Simple and readable structure
-
-## 💻 What You Can Learn
-
-- Creating custom functions
+- Custom functions
 - Function parameters
-- `function notify(message)`
-- String concatenation using `..`
-- Reusable functions
-- SA-MP chat messages
-- SA-MP commands
+- String concatenation
+- Reusable code
+
+---
+
+## 6️⃣ Basic Counter
+
+**File:**
+
+`OnlyLia_Basic_Counter.lua`
+
+A simple counter interface.
+
+### Command
+
+```text
+/liacounter
+```
+
+### Learn
+
+- Integer variables
+- Addition
+- Subtraction
+- Reset values
+- Button interaction
+
+---
+
+## 7️⃣ Basic Text Input
+
+**File:**
+
+`OnlyLia_Basic_TextInput.lua`
+
+Learn how to receive text from the user.
+
+### Command
+
+```text
+/liainput
+```
+
+### Learn
+
+- `ffi`
+- InputText
+- User input
+- String conversion
+- Chat messages
+
+---
+
+## 8️⃣ Basic Color UI
+
+**File:**
+
+`OnlyLia_Basic_ColorUI.lua`
+
+A basic color picker interface.
+
+### Command
+
+```text
+/liacolor
+```
+
+### Learn
+
+- Color picker
+- RGB values
+- Float arrays
+- Colored text
+
+---
+
+## 9️⃣ Basic Tab UI
+
+**File:**
+
+`OnlyLia_Basic_TabUI.lua`
+
+Learn how to create multiple UI pages.
+
+### Command
+
+```text
+/liatab
+```
+
+### Learn
+
+- Tab bar
+- Tab items
+- Multi-page UI
+- UI organization
+
+---
+
+## 🔟 Basic Popup
+
+**File:**
+
+`OnlyLia_Basic_Popup.lua`
+
+A simple popup and modal window.
+
+### Command
+
+```text
+/liapopup
+```
+
+### Learn
+
+- `OpenPopup`
+- Modal windows
+- Popup logic
+- Closing popups
+
+---
+
+## 1️⃣1️⃣ Basic Progress Bar
+
+**File:**
+
+`OnlyLia_Basic_ProgressBar.lua`
+
+A simple progress system.
+
+### Command
+
+```text
+/liaprogress
+```
+
+### Learn
+
+- Float variables
+- Progress bar
+- Percentage
+- Minimum and maximum values
+
+---
+
+## 1️⃣2️⃣ Basic Combo Box
+
+**File:**
+
+`OnlyLia_Basic_ComboBox.lua`
+
+A selectable option interface.
+
+### Command
+
+```text
+/liacombo
+```
+
+### Learn
+
+- Combo box
+- Selectable items
+- Tables
+- Selected index
+
+---
+
+## 1️⃣3️⃣ Basic List UI
+
+**File:**
+
+`OnlyLia_Basic_ListUI.lua`
+
+A simple selectable list.
+
+### Command
+
+```text
+/lialist
+```
+
+### Learn
+
+- Lua tables
+- Loops
+- `Selectable`
+- Selected values
+
+---
+
+## 1️⃣4️⃣ Basic Toggle UI
+
+**File:**
+
+`OnlyLia_Basic_ToggleUI.lua`
+
+A UI containing multiple ON/OFF features.
+
+### Command
+
+```text
+/liatoggle
+```
+
+### Learn
+
+- Boolean variables
+- Checkboxes
+- Toggle systems
+- Status display
+
+---
+
+## 1️⃣5️⃣ Basic Auto Save
+
+**File:**
+
+`OnlyLia_Basic_AutoSave.lua`
+
+Learn basic save and load functionality.
+
+### Command
+
+```text
+/liasave
+```
+
+### Learn
+
+- `inicfg`
+- Configuration files
+- Save settings
+- Load settings
+- Persistent data
+
+---
+
+## 1️⃣6️⃣ Basic Timer
+
+**File:**
+
+`OnlyLia_Basic_Timer.lua`
+
+A simple realtime timer.
+
+### Command
+
+```text
+/liatimer
+```
+
+### Learn
+
+- Time calculation
+- `os.clock()`
+- Start
+- Stop
+- Reset
+
+---
+
+## 1️⃣7️⃣ Basic Random Generator
+
+**File:**
+
+`OnlyLia_Basic_Random.lua`
+
+Generate random numbers between two values.
+
+### Command
+
+```text
+/liarandom
+```
+
+### Learn
+
+- `math.random()`
+- Minimum values
+- Maximum values
+- Input validation
+
+---
+
+## 1️⃣8️⃣ Basic Calculator
+
+**File:**
+
+`OnlyLia_Basic_Calculator.lua`
+
+A basic calculator interface.
+
+### Command
+
+```text
+/liacalc
+```
+
+### Learn
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Float variables
+- Result formatting
+
+---
+
+## 1️⃣9️⃣ Basic To-Do List
+
+**File:**
+
+`OnlyLia_Basic_TodoList.lua`
+
+A simple interactive task list.
+
+### Command
+
+```text
+/liatodo
+```
+
+### Learn
+
+- Lua tables
+- Adding data
+- Removing data
+- Checkboxes
+- Loops
+- Dynamic UI
+
+---
+
+## 2️⃣0️⃣ Basic Notes
+
+**File:**
+
+`OnlyLia_Basic_Notes.lua`
+
+A simple notes editor.
+
+### Command
+
+```text
+/lianotes
+```
+
+### Learn
+
+- `InputTextMultiline`
+- Text buffers
+- `ffi`
+- Save data in memory
+- Clear text
 
 ---
 
 # 📥 Installation
 
-1. Download the `.lua` script you want to use.
-2. Move the file to your MonetLoader scripts folder.
+1. Download the `.lua` script you want.
+2. Move the script into your MonetLoader scripts folder.
 3. Start or restart SA-MP Android.
-4. MonetLoader will load the script automatically.
-5. Use the available command in-game.
+4. Wait until MonetLoader loads the script.
+5. Use the command listed for that script.
 
 ---
 
@@ -213,28 +595,45 @@ OnlyLia-MonetLoader/
 ├── OnlyLia_Basic_ClockHUD.lua
 ├── OnlyLia_Basic_SettingsUI.lua
 ├── OnlyLia_Basic_Notification.lua
+├── OnlyLia_Basic_Counter.lua
+├── OnlyLia_Basic_TextInput.lua
+├── OnlyLia_Basic_ColorUI.lua
+├── OnlyLia_Basic_TabUI.lua
+├── OnlyLia_Basic_Popup.lua
+├── OnlyLia_Basic_ProgressBar.lua
+├── OnlyLia_Basic_ComboBox.lua
+├── OnlyLia_Basic_ListUI.lua
+├── OnlyLia_Basic_ToggleUI.lua
+├── OnlyLia_Basic_AutoSave.lua
+├── OnlyLia_Basic_Timer.lua
+├── OnlyLia_Basic_Random.lua
+├── OnlyLia_Basic_Calculator.lua
+├── OnlyLia_Basic_TodoList.lua
+├── OnlyLia_Basic_Notes.lua
+│
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# 🚀 Tips for Learning
 
-Open the scripts and experiment with small changes.
+Don't just download the scripts.
 
-Try changing:
+Try experimenting by changing:
 
 - Script names
-- Author names
+- Commands
 - Chat messages
-- Command names
 - Window titles
-- Button text
-- HUD positions
+- Button names
+- Colors
+- Variables
+- UI positions
+- Tables
 - Settings values
-- Notification messages
 
-Experimenting with small changes is one of the best ways to learn Lua and MonetLoader scripting.
+The best way to learn Lua is by changing something and seeing what happens.
 
 ---
 
@@ -242,7 +641,15 @@ Experimenting with small changes is one of the best ways to learn Lua and MonetL
 
 - SA-MP Android
 - MonetLoader
-- Basic understanding of Lua
+- Basic Lua knowledge
+
+Some scripts also require:
+
+- `mimgui`
+- `ffi`
+- `inicfg`
+
+depending on the script.
 
 ---
 
@@ -258,9 +665,17 @@ Experimenting with small changes is one of the best ways to learn Lua and MonetL
 
 # 🌟 Support
 
-⭐ If this repository helps you learn, consider giving it a star!
+If this repository helps you learn:
 
-More MonetLoader learning scripts will be added in the future.
+⭐ Give the repository a star.
+
+📌 Follow the repository for future scripts and updates.
+
+---
+
+## 🎯 Goal
+
+The goal of this repository is to provide simple examples that help beginners understand how MonetLoader and Lua scripting work on SA-MP Android.
 
 ---
 
