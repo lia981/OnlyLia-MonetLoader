@@ -12,12 +12,13 @@ The scripts are designed to be simple, readable, and easy to modify.
 
 ---
 
-## ⚡ Available Scripts
+# ⚡ Available Scripts
 
 | Script | Description |
 |---|---|
 | `OnlyLia_Basic_Learning.lua` | Basic MonetLoader script for learning Lua structure and SA-MP commands |
 | `OnlyLia_Basic_mimgui.lua` | Basic mimgui UI script for learning windows and buttons |
+| `OnlyLia_Basic_ClockHUD.lua` | Basic Clock HUD for learning realtime UI and HUD rendering |
 
 ---
 
@@ -94,6 +95,44 @@ A simple mimgui script created for beginners who want to learn how to create UI 
 
 ---
 
+# 🕒 Script 3 — Basic Clock HUD
+
+**File:**
+
+`OnlyLia_Basic_ClockHUD.lua`
+
+A simple realtime Clock HUD created for learning how to display information on the screen using mimgui.
+
+## ✨ Command
+
+```text
+/liahud
+```
+
+Use the command to enable or disable the Clock HUD.
+
+## 🖥️ HUD Features
+
+- Realtime system clock
+- Displays hours, minutes, and seconds
+- HUD overlay
+- ON/OFF toggle command
+- Transparent background
+- Automatic realtime updates
+
+## 💻 What You Can Learn
+
+- `os.date()`
+- Realtime updates
+- HUD positioning
+- `imgui.SetNextWindowPos()`
+- `imgui.SetNextWindowBgAlpha()`
+- `imgui.WindowFlags`
+- Creating a simple overlay
+- Toggle systems
+
+---
+
 # 📥 Installation
 
 1. Download the `.lua` script you want to use.
@@ -111,6 +150,7 @@ OnlyLia-MonetLoader/
 │
 ├── OnlyLia_Basic_Learning.lua
 ├── OnlyLia_Basic_mimgui.lua
+├── OnlyLia_Basic_ClockHUD.lua
 └── README.md
 ```
 
@@ -128,6 +168,8 @@ You can try changing:
 - Command names
 - Window titles
 - Button names
+- HUD positions
+- HUD text
 
 Experimenting with small changes is a good way to learn Lua and MonetLoader scripting.
 
@@ -151,83 +193,12 @@ Experimenting with small changes is a good way to learn Lua and MonetLoader scri
 
 ---
 
+## 🌟 Support
+
 ⭐ If this repository helps you learn, consider giving it a star!
 
-Made with ❤️ by **OnlyLia**2. Move the file to your MonetLoader scripts folder
-3. Start or restart SA-MP Android
-4. MonetLoader will load the script automatically
-5. Use the available commands in-game
+More MonetLoader learning scripts may be added in the future.
 
 ---
-
-## 💻 What You Can Learn
-
-This basic script demonstrates:
-
-- Lua script structure
-- Using `require`
-- The `main()` function
-- Script loops
-- Using `wait(0)`
-- Detecting SA-MP availability
-- Sending chat messages
-- Creating SA-MP commands
-- Basic MonetLoader scripting
-
----
-
-## 📂 Project Structure
-
-```text
-OnlyLia-MonetLoader/
-│
-├── OnlyLia_Basic_Learning.lua
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-Open the Lua script and try changing things such as:
-
-- Chat messages
-- Command names
-- Script name
-- Author name
-
-Experimenting with simple changes is a good way to start learning Lua and MonetLoader scripting.
-
----
-
-## 🎮 Requirements
-
-- SA-MP Android
-- MonetLoader
-- Basic understanding of Lua
-
----
-
-## ⚡ Available Scripts
-
-| Script | Description |
-|---|---|
-| `OnlyLia_Basic_Learning.lua` | Basic MonetLoader script for learning Lua and SA-MP commands |
-
-More scripts may be added in the future.
-
----
-
-## 👨‍💻 Author
-
-**OnlyLia**
-
-🎮 MonetLoader Script Developer  
-💻 Lua • SA-MP Android  
-⚡ Creating useful tools & modern UI
-
----
-
-⭐ If this project helps you learn, consider giving the repository a star!
 
 Made with ❤️ by **OnlyLia**
