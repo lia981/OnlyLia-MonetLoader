@@ -20,6 +20,7 @@ The scripts are designed to be simple, readable, and easy to modify.
 | `OnlyLia_Basic_mimgui.lua` | Learn basic mimgui windows and buttons |
 | `OnlyLia_Basic_ClockHUD.lua` | Learn realtime HUD rendering and system time |
 | `OnlyLia_Basic_SettingsUI.lua` | Learn checkboxes, sliders, and settings variables |
+| `OnlyLia_Basic_Notification.lua` | Learn reusable functions and chat notification systems |
 
 ---
 
@@ -151,6 +152,47 @@ A simple settings window for learning interactive UI elements.
 
 ---
 
+# 🔔 Script 5 — Basic Notification System
+
+**File:** `OnlyLia_Basic_Notification.lua`
+
+A simple notification system for learning how to create reusable functions and display consistent chat messages.
+
+## ✨ Commands
+
+```text
+/lianotify
+/liatest
+```
+
+### `/lianotify`
+
+Displays a basic notification message.
+
+### `/liatest`
+
+Displays a test notification message.
+
+## 🔔 Features
+
+- Custom notification function
+- Reusable chat messages
+- Message parameters
+- Multiple commands using the same function
+- Simple and readable structure
+
+## 💻 What You Can Learn
+
+- Creating custom functions
+- Function parameters
+- `function notify(message)`
+- String concatenation using `..`
+- Reusable functions
+- SA-MP chat messages
+- SA-MP commands
+
+---
+
 # 📥 Installation
 
 1. Download the `.lua` script you want to use.
@@ -170,6 +212,7 @@ OnlyLia-MonetLoader/
 ├── OnlyLia_Basic_mimgui.lua
 ├── OnlyLia_Basic_ClockHUD.lua
 ├── OnlyLia_Basic_SettingsUI.lua
+├── OnlyLia_Basic_Notification.lua
 └── README.md
 ```
 
@@ -189,6 +232,7 @@ Try changing:
 - Button text
 - HUD positions
 - Settings values
+- Notification messages
 
 Experimenting with small changes is one of the best ways to learn Lua and MonetLoader scripting.
 
